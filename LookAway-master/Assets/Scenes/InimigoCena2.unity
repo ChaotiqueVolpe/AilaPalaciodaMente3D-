@@ -1167,7 +1167,7 @@ GameObject:
   - component: {fileID: 316171544}
   - component: {fileID: 316171543}
   m_Layer: 0
-  m_Name: inimigos1
+  m_Name: TrilhaSonoraInimigos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1183,7 +1183,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bcada4388b8d99247a19a9e11549ed8c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b805ffa5ff241bd418b3b7889d12bed3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -6756,7 +6756,7 @@ MonoBehaviour:
   lvlupwarnTxt: {fileID: 126240735}
   turnLogBox: {fileID: 1676945415}
   startWaitTime: 3
-  cd: 1
+  cd: 2
   cenaACarregar: mapa1
 --- !u!1 &1913500524
 GameObject:

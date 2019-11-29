@@ -2810,7 +2810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186361290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.2, y: 24.8, z: 35.7}
+  m_LocalPosition: {x: 39.2, y: 24.8, z: 38.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3994,7 +3994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246729318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.2, y: 24.8, z: 35.7}
+  m_LocalPosition: {x: 8.2, y: 24.8, z: 38.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4915,7 +4915,7 @@ GameObject:
   - component: {fileID: 316171544}
   - component: {fileID: 316171543}
   m_Layer: 0
-  m_Name: inimigos1
+  m_Name: TrilhaSonoraCoxinha1kg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4931,7 +4931,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bcada4388b8d99247a19a9e11549ed8c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c2aa56ce359db064aac2312bf997908c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -9354,7 +9354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636593458}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.374289, y: 10.3787, z: 132.7367}
+  m_LocalPosition: {x: 17.374289, y: 12.79, z: 132.7367}
   m_LocalScale: {x: 1.7710534, y: 1.7710534, z: 1.7710534}
   m_Children:
   - {fileID: 1653126807}
@@ -12705,7 +12705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826146474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.909, y: 10.3787, z: 109.47}
+  m_LocalPosition: {x: 18.909, y: 10.42, z: 109.47}
   m_LocalScale: {x: 1.5541, y: 1.5541, z: 1.5541}
   m_Children:
   - {fileID: 1444465266}
@@ -23909,7 +23909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617514492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.585636, y: 10.3787, z: 132.7367}
+  m_LocalPosition: {x: -10.585636, y: 12.79, z: 132.7367}
   m_LocalScale: {x: 1.7710534, y: 1.7710534, z: 1.7710534}
   m_Children:
   - {fileID: 941001646}
