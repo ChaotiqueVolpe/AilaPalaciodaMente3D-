@@ -17,7 +17,7 @@ public class Defender : BaseAction
 
         StatAffinity = StatCalc.StatType.DETERMINACAO;
 
-        inimstats.armadura += 5;
+        inimstats.armadura = 8;
 
     }
 }

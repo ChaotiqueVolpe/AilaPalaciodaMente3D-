@@ -8,7 +8,7 @@ public class AttackAction : BaseAction
         ActionName = "Investida";
         ActionDesc = "Um ataque simples. Dano moderado, baixo Atordoamento";
         ActionID = 1 ;
-        ActionPower= 10 ;
+        ActionPower= 18 ;
         StunPower = 10 ;
         ActionCost = 0;
         ActionCritChance = 30;
