@@ -145,7 +145,7 @@ public class PlayerCreation : MonoBehaviour
         classStartStats.GetComponent<TextMeshProUGUI>().text =
             " Poder: " + GameInformation.Aila.Poder + " " +
             " " +
-            " Imaginacao: " + GameInformation.Aila.Imaginacao + " " +
+            " Imaginação: " + GameInformation.Aila.Imaginacao + " " +
             " " +
             " Resistência: " + GameInformation.Aila.Resistencia + " " +
             " " +
