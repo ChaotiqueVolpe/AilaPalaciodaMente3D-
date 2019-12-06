@@ -6,7 +6,7 @@ public class PowerUpSpawn : MonoBehaviour
 {
     public GameObject powerUpGmObj;
     public PowerUps powerUp;
-    public float startingRespwanTime;
+    public float startingRespawnTime;
     private float respawnTime;
     
     // Start is called before the first frame update
@@ -34,7 +34,6 @@ public class PowerUpSpawn : MonoBehaviour
     {
         powerUpGmObj.SetActive(true);
         powerUp.coletado = false;
-        respawnTime = startingRespwanTime;
+        respawnTime = startingRespawnTime;
     }
-
 }

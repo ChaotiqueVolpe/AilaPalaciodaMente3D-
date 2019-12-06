@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndingCinematic : MonoBehaviour
 {
@@ -11,12 +12,13 @@ public class EndingCinematic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         creditCanvas.SetActive(false);
         waitTime = cinematicTime;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(waitTime >= 0)
         {
@@ -25,7 +27,14 @@ public class EndingCinematic : MonoBehaviour
         else
         {
             creditCanvas.SetActive(true);
-        }
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Confined;
 
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                SceneManager.LoadScene("Menu");
+
+            }
+        }
     }
 }

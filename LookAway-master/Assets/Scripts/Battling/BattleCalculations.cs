@@ -129,8 +129,8 @@ public class BattleCalculations
 
     private int CalculateStatusEffectDMG()
     {
-        statusEffDmg = BattleHandler.statusEffectBaseDamage * (int)(GameInformation.Aila.Imaginacao * 0.25f);
-        Debug.Log("O dano de status causado é: " + statusEffDmg);
+        statusEffDmg = 0; //(int)(GameInformation.Aila.Imaginacao * 0.25f);
+       
         return statusEffDmg;
     }
 
@@ -158,7 +158,7 @@ public class BattleCalculations
         if (DecidirEnemyActionCriticalHit())
         {
             //Crítico adiciona dano ao dano total = 100% + uma porcentagem retirada da determinação de dano extra
-            criticalDMG = (int)(totalActionDMG);
+            criticalDMG = (int)(totalActionDMG/2);
             totalStunDMG = totalStunDMG * 2; //Stun sempre é dobrado.
            
             return criticalDMG;
@@ -189,7 +189,7 @@ public class BattleCalculations
         int randomTemp = Random.Range(0, 100);
 
         //chance alterada pelo valor de Sorte do jogador = 10% da sorte;
-        int chanceModificada = (int)(enemyusedAction.ActionCritChance + (inimigoAgindo.sorte * 0.1f));
+        int chanceModificada = (int)(enemyusedAction.ActionCritChance - 10);
 
         if (randomTemp <= chanceModificada)
         {
@@ -206,7 +206,7 @@ public class BattleCalculations
     {
         int randomTemp = Random.Range(0, 100);
 
-        int chanceEvasModificada = (int)(10 + +(GameInformation.Aila.Sorte * 0.2f));
+        int chanceEvasModificada = (int)(10 + (GameInformation.Aila.Sorte * 0.5f));
 
         if(randomTemp + inimigoAgindo.determinacao *0.1 + inimigoAgindo.poder * 0.1 < chanceEvasModificada)
         {
@@ -234,7 +234,7 @@ public class BattleCalculations
     {
         float resistedDMG = 0.0f;
 
-        resistedDMG = totalEnemyDMG - (int)((GameInformation.Aila.Determinacao * 0.25) + (GameInformation.Aila.Resistencia * 0.5) + GameInformation.Aila.Armadura);
+        resistedDMG = totalEnemyDMG - (int)((GameInformation.Aila.Determinacao * 0.25) + (GameInformation.Aila.Resistencia) + GameInformation.Aila.Armadura);
         Debug.Log("Dano que o jogador recebeu depois da defesa " + resistedDMG);
 
         if (resistedDMG <= 0)

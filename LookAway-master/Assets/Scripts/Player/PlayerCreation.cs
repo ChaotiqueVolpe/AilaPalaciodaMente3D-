@@ -43,6 +43,7 @@ public class PlayerCreation : MonoBehaviour
 
         GameInformation.AcoesAprendidas = actionsToAdd;
         GameInformation.coxinhabossWon = false;
+        GameInformation.cena2BotaoApertado = false;
 
     }
 

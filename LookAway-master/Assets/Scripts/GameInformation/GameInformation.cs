@@ -20,6 +20,7 @@ public class GameInformation : MonoBehaviour
     public static bool returningFromBattle;
     public static bool loadingSave;
     public static bool coxinhabossWon;
+    public static bool cena2BotaoApertado;
 
     public static int AilaPV { get; set; }
     public static int AilaPF { get; set; }

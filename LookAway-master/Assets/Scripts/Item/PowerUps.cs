@@ -11,8 +11,8 @@ public class PowerUps : MonoBehaviour
     private GameObject player;
     public int jumpspeedTemp; //A força adicional temporária adicionada ao jogador
     public bool coletado;
+    public AudioSource coletadoSound;
 
-    
 
     // Start is called before the first frame update
     void Awake()
@@ -26,6 +26,7 @@ public class PowerUps : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             PlayerEnhance(); //método a ser usado para mudar valores e buffar/ debuffar o player (Especialmente em movimentação livre)
+            coletadoSound.Play();
             coletado = true;
         }
     }

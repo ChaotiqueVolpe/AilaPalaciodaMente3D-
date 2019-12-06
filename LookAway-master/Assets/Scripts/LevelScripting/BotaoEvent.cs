@@ -21,6 +21,8 @@ public class BotaoEvent : MonoBehaviour
     {
         pressedBtn = false;
         jaApertou = false;
+
+        jaApertou = GameInformation.cena2BotaoApertado;
     }
 
     // Update is called once per frame
@@ -38,7 +40,7 @@ public class BotaoEvent : MonoBehaviour
                 pressionarSFX.Play();
                 pressedBtn = false;
                 jaApertou = true;
-
+                GameInformation.cena2BotaoApertado = true;
                 dialogoBotao.DialogoTrigger();
             }
         }
